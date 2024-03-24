@@ -13,7 +13,7 @@ def handle_text(update: Update, context: CallbackContext) -> None:
 
     with open('video_id.txt', 'w') as file:
         file.write(video_id)
-    # Запускаем basedOn.py с переданным video_id
+    # Запускаем basedOn.py с переданным video_id => Bugkill: w/o video_id ||  pip install google-api-python-client -t ./
     subprocess.run(['python', 'basedOn.py'])
 
     # Отправляем пользователю полученный CSV-файл
