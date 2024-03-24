@@ -3,7 +3,6 @@ from telegram import Update
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-# Замените на ваш токен Telegram бота
 TOKEN = '7034879083:AAHK85BoLe8Oq_xCdW9HrYBJq8mhTQSphJM'
 
 def start(update: Update, context: CallbackContext) -> None:
