@@ -3,7 +3,6 @@ from telegram import Update
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-# Замените на ваш токен Telegram бота
 TOKEN = '7034879083:AAHK85BoLe8Oq_xCdW9HrYBJq8mhTQSphJM'
 
 def start(update: Update, context: CallbackContext) -> None:
@@ -14,7 +13,7 @@ def handle_text(update: Update, context: CallbackContext) -> None:
 
     with open('video_id.txt', 'w') as file:
         file.write(video_id)
-    # Запускаем basedOn.py с переданным video_id
+    # Запускаем basedOn.py с переданным video_id => Bugkill: w/o video_id ||  pip install google-api-python-client -t ./
     subprocess.run(['python', 'basedOn.py'])
 
     # Отправляем пользователю полученный CSV-файл
