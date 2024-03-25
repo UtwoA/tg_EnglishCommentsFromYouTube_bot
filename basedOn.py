@@ -12,6 +12,8 @@ with open('video_id.txt', 'r') as file:
 
 print(f"Received video_id: {video_id}")
 
+video_id = re.search(r"(?<=v=)[\w-]+", video_id).group(0)
+
 # Функция для скачивания корневых комментариев
 def youtube(nextPageToken=None):
     # Disable OAuthlib's HTTPS verification when running locally.

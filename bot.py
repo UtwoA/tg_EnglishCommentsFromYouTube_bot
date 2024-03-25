@@ -7,7 +7,7 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, Callb
 TOKEN = '7034879083:AAHK85BoLe8Oq_xCdW9HrYBJq8mhTQSphJM'
 
 def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text('Привет! Пожалуйста, введите video_id:')
+    update.message.reply_text('Привет! Пожалуйста, введите ссылку на видео:')
 
 def handle_text(update: Update, context: CallbackContext) -> None:
     video_id = update.message.text
