@@ -3,10 +3,10 @@ from telegram import Update
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-TOKEN = '7034879083:AAHK85BoLe8Oq_xCdW9HrYBJq8mhTQSphJM'
+TOKEN = 'edit this'
 
 def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text('Привет! Пожалуйста, введите ссылку на видео:')
+    update.message.reply_text('input link here -> ')
 
 def handle_text(update: Update, context: CallbackContext) -> None:
     video_id = update.message.text
