@@ -4,7 +4,7 @@ from googleapiclient.discovery import build
 import csv
 import re
 
-DEVELOPER_KEY = "AIzaSyBfvEYaVkPPGLMmBxFPSQaOAZmuweDueHs"
+DEVELOPER_KEY = "edit this"
 
 # Загрузим значение video_id из файла
 with open('video_id.txt', 'r') as file:
